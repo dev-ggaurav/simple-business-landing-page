@@ -1,0 +1,10 @@
+// All the Footer Styles go here.
+
+.footer{
+    @include con(lg);
+    padding: 3rem 0;
+
+    text-align: center;
+    font-size: $body-sm;
+    color: $neutral-400;
+}

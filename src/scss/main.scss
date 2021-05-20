@@ -1,0 +1,31 @@
+@import
+  'abstracts/variables',
+  'abstracts/mixins';
+
+@import
+  'base/reset',
+  'base/utilities';
+
+@import
+  'components/buttons',
+  'components/cards',
+  'components/scroll';
+
+@import
+  'layout/header',
+  'layout/hero',
+  'layout/feature',
+  'layout/blog',
+  'layout/tech',
+  'layout/contact',
+  'layout/footer';
+
+
+.title-text{
+    text-align: center;
+    color: $clr-primary;
+}
+
+div{
+  display: block;
+}

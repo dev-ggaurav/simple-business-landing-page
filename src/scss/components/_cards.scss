@@ -1,0 +1,63 @@
+// All the Card Styles go here.
+
+.blog-card{
+
+    
+    & .card-img{
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    & .card-text{
+        max-width: 30rem;
+        display: inline-block;
+        background-color: #fff;
+        padding: 3rem 1.5rem;
+        border-radius: 10px;
+        margin-top: -10rem;
+        box-shadow:
+  0 36px 42px rgba(0, 0, 0, 0.08)
+;
+    }
+
+    & .card-title{
+        font-size: $body-lg-mb;
+        color: $neutral-800;
+    }
+
+    & .card-info{
+        font-size: $body-sm;
+        margin: 1.5rem 0;
+        color: $neutral-600;
+    }
+
+    & .card-cta{
+        font-size: $body-sm;
+        color: $clr-accent;
+    }
+    
+}
+
+.tech-card{
+    max-width: 15rem;
+
+    & .tech-number{
+        font-size: $display-lg-dt;
+        color:#10101014;
+    }
+
+    & .tech-icon{
+        margin-top: -4.2rem;
+    }
+
+    & .tech-title{
+        font-size: $body-lg-mb;
+        color: $neutral-600;
+        margin: 1rem 0;
+    }
+
+    & .tech-info{
+        font-size: $body-sm;
+        color: $neutral-500;
+    }
+}

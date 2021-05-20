@@ -1,0 +1,51 @@
+// All the Hero Styles go here.
+.hero-container{
+    background: rgba(213, 32, 71, 0.8);
+    background-image: url("https://images.unsplash.com/photo-1611577311736-c9a92bfce553?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1066&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+
+    & .hero{
+        @include con(lg);
+        text-align: center;
+        padding: 3rem 0;
+    }
+
+    & .hero-text{
+        @include con(sm);
+        color: $neutral-50;
+    }
+
+    & .hero-title{
+        font-size: $heading-two-mb;
+    }
+
+    & .hero-description{
+        font-size: $body-reg;
+        color: $neutral-200;
+        margin: 1rem 0;
+    }
+
+    & .cta-1{
+        margin: 1.5rem 0;
+    }
+
+
+    @include mq(md){
+        .hero-title{
+            font-size: $heading-two-tb;
+        }
+    }
+
+    @include mq(xl){
+
+        .hero-title{
+            font-size: $heading-two-dt;
+        }
+
+        & .hero-description{
+            margin: 2rem 0;
+        }
+    }
+}

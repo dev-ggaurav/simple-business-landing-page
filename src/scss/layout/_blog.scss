@@ -1,0 +1,28 @@
+.blog{
+    background-color: $section-bg;
+    padding: 5rem 0;
+
+    & .cards-container{
+        @include con(lg);
+        text-align: center;
+        margin: 3rem auto;
+        display: grid;
+        justify-items: stretch;
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+
+    @include mq(md){
+        .cards-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @include mq(lg){
+        .cards-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

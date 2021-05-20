@@ -1,0 +1,42 @@
+// mixin for media-queries
+
+@use 'sass:map';
+
+$breakpoints: (
+    xs:400px,
+    sm:640px,
+    md:768px,
+    lg:1024px,
+    xl:1280px,
+    2xl:1536px,
+);
+
+// mixin for mobile-first approach
+
+@mixin mq($key) {
+    $size: map.get($breakpoints, $key);
+    
+    @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+// mixin for desktop-first approach
+
+@mixin mqalt($key) {
+    $size: map.get($breakpoints, $key);
+    
+    @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+// mixin for containers
+
+@mixin con($key) {
+  $size: map.get($breakpoints, $key);
+
+  max-width: $size;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}

@@ -1,0 +1,53 @@
+.feature{
+    @include con(lg);
+    text-align: center;
+    margin: 1.5rem auto;
+
+    & .feature-img{
+        border-radius: 8px;
+        margin: 3rem auto;
+    }
+
+    & .feature-title{
+        font-size: $body-lg-dt;
+        font-weight: 600;
+        color: $neutral-800;
+        margin-bottom: 1.5rem;
+    }
+
+    & .feature-info{
+        font-size: $body-reg;
+        color: $neutral-600;
+        margin-bottom: 1.5rem;
+    }
+
+    @include mq(md){
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: end;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+.fc-2{
+    background-color: $clr-accent;
+    padding: 3rem 0;
+
+    & .feature-title{
+        color: $neutral-50;
+    }
+
+    & .feature-info{
+        color: $neutral-200;
+    }
+
+    & .fc-cta{
+        margin: 3rem 0;
+    }
+
+    & .fc-icon{
+        margin-right: 1.5rem;
+    }
+}
